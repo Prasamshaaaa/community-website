@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaints and Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="complaints.html">Complaints</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="complaints">
+            <h2>Complaints</h2>
+            <!-- Provide a form for people to submit their complaints -->
+            <form id="complaintForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone no" required>
+                </div>
+                <div class="form-group">
+                    <label for="complaint">Complaint:</label>
+                    <textarea placeholder="Write your complaint here" id="complaint" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <!-- Provide a form for people to submit their feedback -->
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name-feedback">Your Name:</label>
+                    <input type="text" id="name-feedback" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email-feedback">Your Email:</label>
+                    <input type="email" id="email-feedback" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone-feedback">Phone No:</label>
+                    <input type="tel" id="phone-feedback" placeholder="Enter your phone no" required>
+                </div>
+                <div class="form-group">
+                    <label for="feedback">Feedback:</label>
+                    <textarea placeholder="Write your feedback here" id="feedback" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Our Society. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

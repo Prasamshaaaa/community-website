@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Members</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for the Core Members Page */
+        .core-members-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .add-member-form {
+            flex: 1;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .add-member-form label,
+        .add-member-form input,
+        .add-member-form textarea {
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            padding: 8px; /* Added padding for input fields */
+        }
+
+        .core-member-profiles {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .core-member-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .core-member-photo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+
+        .core-member-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .core-member-title {
+            color: #777;
+        }
+
+        .core-member-description {
+            text-align: center;
+        }
+
+        .core-member-contact {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="complaints.html">Complaints</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="core-members-container">
+            <div class="add-member-form">
+                <h2>Add New Member</h2>
+                <form id="addMemberForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" required>
+                    <label for="description">Description:</label>
+                    <textarea id="description" rows="7" required></textarea>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" required>
+                    <button type="submit">Add Member</button>
+                </form>
+            </div>
+
+            <div class="core-member-profiles" id="core-member-profiles">
+                <!-- Core member profiles will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Our Society. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
